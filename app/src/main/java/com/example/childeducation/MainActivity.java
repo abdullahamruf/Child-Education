@@ -4,6 +4,7 @@ import android.media.MediaPlayer;
 
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,13 +22,26 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
+     Thread td= new Thread(){
 
-                startActivity(new Intent(MainActivity.this,Login.class));
-                finish();
-            }
-        },3000);
+         public void run(){
+
+             try{
+                sleep(5000);
+             }catch (Exception e){
+                e.printStackTrace();
+             }
+             finally {
+              Intent intent=new Intent(MainActivity.this,Register.class);
+              startActivity(intent);
+              finish();
+             }
+
+         }
+
+
+
+     };td.start();
+
     }
 }
