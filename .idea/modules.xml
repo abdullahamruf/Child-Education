@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/child Education.iml" filepath="$PROJECT_DIR$/.idea/modules/child Education.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/child_Education.iml" filepath="$PROJECT_DIR$/.idea/modules/child_Education.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/child_Education.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/child_Education.app.iml" />
     </modules>
   </component>
 </project>
