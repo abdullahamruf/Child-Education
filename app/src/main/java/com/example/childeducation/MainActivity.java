@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
              try{
                  music=MediaPlayer.create(MainActivity.this,R.raw.wl);
                  music.start();
-                sleep(5000);
+                sleep(3000);
 
              }catch (Exception e){
                 e.printStackTrace();
