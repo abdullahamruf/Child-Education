@@ -1,22 +1,15 @@
 package com.example.childeducation;
 
-import android.media.MediaPlayer;
-
-import android.os.Bundle;
-import android.view.View;
-import android.view.WindowManager;
-import android.widget.Button;
-
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.media.SoundPool;
 import android.os.Bundle;
-import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
-
+    MediaPlayer music;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +20,10 @@ public class MainActivity extends AppCompatActivity {
          public void run(){
 
              try{
+                 music=MediaPlayer.create(MainActivity.this,R.raw.wl);
+                 music.start();
                 sleep(5000);
+
              }catch (Exception e){
                 e.printStackTrace();
              }
