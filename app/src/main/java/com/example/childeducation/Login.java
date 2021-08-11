@@ -37,16 +37,14 @@ TextView t1;
         setContentView(R.layout.activity_login);
 
         t1=findViewById(R.id.need);
-        t1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Login.this,Register.class));
+
+
 
         authentic = FirebaseAuth.getInstance();
         emailid = findViewById(R.id.email);
         password =findViewById(R.id.pass);
-        signup =findViewById(R.id.alt);
-        signin = findViewById(R.id.loginbutton);
+        signup =findViewById(R.id.need);
+        signin = findViewById(R.id.signupbutton);
 
         fire = new FirebaseAuth.AuthStateListener() {
             @Override
@@ -89,19 +87,13 @@ TextView t1;
                         }
                     });
                 } else {
-                    Toast.makeText(Login.this, "Error Ocurred !", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(Login.this, "Error occurred !", Toast.LENGTH_SHORT).show();
                 }
 
             }
         });
 
-        signup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent sign = new Intent(Login.this,Register.class);
-                startActivity(sign);
-            }
-        });
+
     }
 
     @Override
@@ -110,5 +102,5 @@ TextView t1;
         authentic.addAuthStateListener(fire);
     }
 }
-    }
-}
+
+

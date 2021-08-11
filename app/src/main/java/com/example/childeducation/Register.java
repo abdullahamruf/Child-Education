@@ -39,7 +39,7 @@ public class Register extends AppCompatActivity {
 
         username =findViewById(R.id.username);
 
-        already =findViewById(R.id.alt);
+        already =findViewById(R.id.already);
 
         signin = findViewById(R.id.signupbutton);
         already = findViewById(R.id.already);
