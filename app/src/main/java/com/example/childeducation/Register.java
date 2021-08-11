@@ -93,7 +93,7 @@ public class Register extends AppCompatActivity {
                  });
              }
              else{
-                 Toast.makeText(Register.this,"Error Ocurred !",Toast.LENGTH_SHORT).show();
+                 Toast.makeText(Register.this,"Error occurred !",Toast.LENGTH_SHORT).show();
              }
             }
         });
