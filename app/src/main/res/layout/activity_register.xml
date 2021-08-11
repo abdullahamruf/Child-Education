@@ -15,7 +15,7 @@
         android:layout_height="200dp"
         android:layout_weight="1"
         app:lottie_autoPlay="true"
-        app:lottie_loop="true"
+        app:lottie_loop="false"
         app:lottie_rawRes="@raw/login"
         app:lottie_speed="1.75" />
 
@@ -112,20 +112,32 @@
         <Button
             android:id="@+id/signupbutton"
             android:layout_width="wrap_content"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:backgroundTint="#ff0000"
             android:layout_height="wrap_content"
             android:layout_below="@id/pass"
             android:layout_marginTop="20dp"
-            android:background="@drawable/button_signup">
+            android:background="@drawable/custombutton">
 
         </Button>
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:id="@+id/pa"
+            android:visibility="gone"
+            android:layout_height="wrap_content">
+
+        </ProgressBar>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:text="Already have an Account?"
+            android:text="already have an Account?"
             android:textAllCaps="true"
-            android:textColor="#000"
+            android:id="@+id/already"
+            android:textColor="#ff0000"
             android:textSize="15dp"
             android:textStyle="bold">
 

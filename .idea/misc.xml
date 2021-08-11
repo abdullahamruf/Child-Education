@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/maruf/AndroidStudioProjects/childEducation/app/src/main/res/drawable/custombutton.xml" value="0.2203125" />
         <entry key="..\:/Users/maruf/AndroidStudioProjects/childEducation/app/src/main/res/drawable/customedittext.xml" value="0.19479166666666667" />
+        <entry key="..\:/Users/maruf/AndroidStudioProjects/childEducation/app/src/main/res/drawable/edittext.xml" value="0.19479166666666667" />
         <entry key="..\:/Users/maruf/AndroidStudioProjects/childEducation/app/src/main/res/drawable/gradient.xml" value="0.19479166666666667" />
         <entry key="..\:/Users/maruf/AndroidStudioProjects/childEducation/app/src/main/res/drawable/ic_mail.xml" value="0.19479166666666667" />
         <entry key="..\:/Users/maruf/AndroidStudioProjects/childEducation/app/src/main/res/layout/activity_login.xml" value="0.16757246376811594" />
