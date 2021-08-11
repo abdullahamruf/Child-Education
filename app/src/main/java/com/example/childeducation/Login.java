@@ -21,9 +21,9 @@ import org.jetbrains.annotations.NotNull;
 
 public class Login extends AppCompatActivity {
 
-<<<<<<< Updated upstream
+
 TextView t1;
-=======
+
     EditText emailid,password;
     Button signin;
     TextView signup;
@@ -31,18 +31,17 @@ TextView t1;
 
     private FirebaseAuth.AuthStateListener fire;
 
->>>>>>> Stashed changes
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-<<<<<<< Updated upstream
+
         t1=findViewById(R.id.need);
         t1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(Login.this,Register.class));
-=======
+
         authentic = FirebaseAuth.getInstance();
         emailid = findViewById(R.id.email);
         password =findViewById(R.id.pass);
@@ -92,7 +91,7 @@ TextView t1;
                 } else {
                     Toast.makeText(Login.this, "Error Ocurred !", Toast.LENGTH_SHORT).show();
                 }
->>>>>>> Stashed changes
+
             }
         });
 
@@ -109,5 +108,7 @@ TextView t1;
     protected void onStart() {
         super.onStart();
         authentic.addAuthStateListener(fire);
+    }
+}
     }
 }
