@@ -8,6 +8,7 @@
     android:orientation="horizontal"
     tools:context=".Login">
 
+
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/secondAnimationView"
         android:layout_width="match_parent"
@@ -121,4 +122,41 @@
     </LinearLayout>
 
 
+
+
+    <EditText
+        android:id="@+id/loginmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        tools:layout_editor_absoluteX="102dp"
+        tools:layout_editor_absoluteY="222dp"
+        android:hint="Email"
+        android:drawableStart="@drawable/ic_mail"
+        tools:ignore="MissingConstraints"
+        android:drawableLeft="@drawable/ic_mail" />
+
+    <EditText
+        android:id="@+id/loginpassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        tools:layout_editor_absoluteX="105dp"
+        tools:layout_editor_absoluteY="300dp"
+        android:hint="Password"
+        android:drawableStart="@drawable/ic_lock"
+        tools:ignore="MissingConstraints"
+        android:drawableLeft="@drawable/ic_lock" />
+
+    <Button
+        android:id="@+id/loginbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="377dp"
+        tools:ignore="InvalidId,MissingConstraints" />
 </RelativeLayout>
+

@@ -33,7 +33,11 @@ public class Register extends AppCompatActivity {
         authentic = FirebaseAuth.getInstance();
         emailid = findViewById(R.id.email);
         password =findViewById(R.id.pass);
+
         username =findViewById(R.id.username);
+
+        already =findViewById(R.id.alt);
+
         signin = findViewById(R.id.signupbutton);
         already = findViewById(R.id.already);
        p = findViewById(R.id.pa);
@@ -97,5 +101,13 @@ public class Register extends AppCompatActivity {
              }
             }
         });
+        already.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a = new Intent(Register.this,Login.class);
+                startActivity(a);
+            }
+        });
     }
+
 }
