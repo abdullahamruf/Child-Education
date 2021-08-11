@@ -41,8 +41,10 @@ TextView t1;
 
 
         authentic = FirebaseAuth.getInstance();
+
+
         emailid = findViewById(R.id.email);
-        password =findViewById(R.id.pass);
+        password =findViewById(R.id.username);
         signup =findViewById(R.id.need);
         signin = findViewById(R.id.signupbutton);
 
@@ -50,14 +52,7 @@ TextView t1;
             @Override
             public void onAuthStateChanged(@NonNull @NotNull FirebaseAuth firebaseAuth) {
                 FirebaseUser user = authentic.getCurrentUser();
-            if(user!=null){
-                Toast.makeText(Login.this, "Login Succesfull", Toast.LENGTH_SHORT).show();
-                Intent i= new Intent(Login.this,Study.class);
-                startActivity(i);
-            }
-            else{
-                Toast.makeText(Login.this, "Please Login first", Toast.LENGTH_SHORT).show();
-            }
+
             }
         };
         signin.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +72,7 @@ TextView t1;
                     authentic.signInWithEmailAndPassword(email,pas).addOnCompleteListener(Login.this, new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull @NotNull Task<AuthResult> task) {
-                        if(task.isSuccessful()){
+                        if(!task.isSuccessful()){
                             Toast.makeText(Login.this,"User & Password doesn't match, Try again",Toast.LENGTH_SHORT).show();
                         }
                         else{
@@ -92,6 +87,12 @@ TextView t1;
 
             }
         });
+     t1.setOnClickListener(new View.OnClickListener() {
+         @Override
+         public void onClick(View v) {
+           Intent in =new Intent(Login.this,Register.class);
+         }
+     });
 
 
     }
