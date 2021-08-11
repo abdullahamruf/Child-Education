@@ -81,7 +81,7 @@ TextView t1;
                             Toast.makeText(Login.this,"User & Password doesn't match, Try again",Toast.LENGTH_SHORT).show();
                         }
                         else{
-                            Intent study = new Intent(Login.this,Study.class);
+                            Intent study = new Intent(Login.this,Register.class);
                             startActivity(study);
                         }
                         }
