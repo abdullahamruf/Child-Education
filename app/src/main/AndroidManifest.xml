@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ChildEducation">
-        <activity android:name=".Study"></activity>
+        <activity android:name=".first25"></activity>
+        <activity android:name=".Study" />
         <activity android:name=".Login" />
         <activity android:name=".Register" />
         <activity android:name=".MainActivity">
