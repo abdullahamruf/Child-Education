@@ -44,10 +44,11 @@ public class Register extends AppCompatActivity {
         signin = findViewById(R.id.signupbutton);
         already = findViewById(R.id.already);
        p = findViewById(R.id.pa);
-     //  if(authentic.getCurrentUser() !=null){
-          /// startActivity(new Intent(Register.this,Login.class));
+      if(authentic.getCurrentUser() !=null){
+          startActivity(new Intent(Register.this,Study.class));
+          finish();
 
-      // }
+      }
         already.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -96,6 +97,7 @@ public class Register extends AppCompatActivity {
                         else{
                             startActivity(new Intent(Register.this,Login.class));
                          }
+                         p.setVisibility(View.GONE);
                      }
                  });
              }

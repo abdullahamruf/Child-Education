@@ -51,7 +51,15 @@ TextView t1;
         fire = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull @NotNull FirebaseAuth firebaseAuth) {
-                FirebaseUser user = authentic.getCurrentUser();
+                FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+                if(user != null){
+                Intent intent =new Intent(Login.this,Study.class);
+                startActivity(intent);
+                    finish();
+
+                }else{
+                    Toast.makeText(Login.this,"Please Login ",Toast.LENGTH_SHORT).show();;
+                }
 
             }
         };
@@ -91,6 +99,7 @@ TextView t1;
          @Override
          public void onClick(View v) {
            Intent in =new Intent(Login.this,Register.class);
+           startActivity(in);
          }
      });
 
