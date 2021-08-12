@@ -2,6 +2,7 @@ package com.example.childeducation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -11,7 +12,7 @@ import android.widget.Toast;
 
 public class Study extends AppCompatActivity implements
         AdapterView.OnItemSelectedListener {
-    String[] country = { "India", "USA", "China", "Japan", "Other"};
+    String[] country = { "Number ","1-10", "11-20", "21-30", "31-40", "41-50"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +30,19 @@ public class Study extends AppCompatActivity implements
 
     }
 
-    //Performing action onItemSelected and onNothing selected
+
     @Override
     public void onItemSelected(AdapterView<?> arg0, View arg1, int position, long id) {
-        Toast.makeText(getApplicationContext(),country[position] , Toast.LENGTH_LONG).show();
+        final Intent intent;
+        switch(position){
+            case 1:
+                intent = new Intent(Study.this, first25.class);
+                startActivity(intent);
+                break;
+
+    }
+
+
     }
     @Override
     public void onNothingSelected(AdapterView<?> arg0) {

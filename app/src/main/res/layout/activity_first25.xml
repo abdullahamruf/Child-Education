@@ -1,26 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/scrollview"
-    android:visibility="gone"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginBottom="2dp"
-    android:layout_marginEnd="1dp"
-    android:layout_marginStart="1dp"
-    android:layout_marginTop="2dp"
-    android:orientation="vertical"
+
+
     tools:context=".first25">
 
    <Button
+       android:id="@+id/button1"
+
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
-       android:id="@+id/button1"
-       android:background="@drawable/button1"
+       android:layout_alignEnd="@+id/button4"
+       android:layout_alignRight="@+id/button4"
 
-       >
-   </Button>
+       android:text="1" />
+
+   <Button
+       android:id="@+id/button2"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/button1"
+       android:layout_toLeftOf="@+id/button3"
+       android:layout_toStartOf="@+id/button3"
+       android:text="2" />
+
+   <Button
+       android:id="@+id/button3"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignTop="@+id/button2"
+       android:layout_centerHorizontal="true"
+       android:text="3" />
+
+   <Button
+       android:id="@+id/button4"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/button1"
+       android:layout_toLeftOf="@+id/button2"
+       android:text="4" />
+
+   <Button
+       android:id="@+id/button5"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignStart="@+id/button2"
+       android:layout_alignLeft="@+id/button2"
+       android:layout_alignBottom="@+id/button4"
+       android:layout_marginStart="-4dp"
+       android:layout_marginLeft="-4dp"
+       android:layout_marginBottom="2dp"
+       android:text="5" />
+
+   <Button
+       android:id="@+id/button6"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/button3"
+       android:layout_alignStart="@+id/button3"
+       android:layout_below="@+id/button3"
+       android:text="6" />
+
+   <Button
+       android:id="@+id/button7"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_below="@+id/button4"
+       android:layout_toLeftOf="@+id/button2"
+       android:text="7" />
+
+   <Button
+       android:id="@+id/button8"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/button5"
+       android:layout_alignStart="@+id/button5"
+       android:layout_below="@+id/button5"
+       android:text="8" />
+
+   <Button
+       android:id="@+id/button9"
+
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/button6"
+       android:layout_alignStart="@+id/button6"
+       android:layout_below="@+id/button6"
+       android:text="9" />
 
 
-</ScrollView>
+
+</RelativeLayout>

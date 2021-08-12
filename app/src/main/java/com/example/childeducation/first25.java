@@ -13,7 +13,7 @@ public class first25 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_first25);
-        view1=findViewById(R.id.scrollview);
-        view1.setVisibility(View.VISIBLE);
+       // view1=findViewById(R.id.scrollview);
+       // view1.setVisibility(View.VISIBLE);
     }
 }
