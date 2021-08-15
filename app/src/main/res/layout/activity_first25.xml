@@ -19,6 +19,7 @@
           android:layout_height="100dp"
           android:layout_weight="1"
           app:lottie_speed="1.75"
+
           app:lottie_autoPlay="true"
           app:lottie_rawRes="@raw/gf"
           app:lottie_loop="true" />
@@ -49,6 +50,7 @@
           android:layout_rowWeight="1"
           android:backgroundTint="#F44336"
           android:layout_marginLeft="16dp"
+          android:onClick="ShowPopup"
           android:layout_marginRight="16dp"
           app:cardElevation="8dp"
           app:cardCornerRadius="8dp"

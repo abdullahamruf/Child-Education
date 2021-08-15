@@ -12,7 +12,7 @@ import android.widget.Toast;
 
 public class Study extends AppCompatActivity implements
         AdapterView.OnItemSelectedListener {
-    String[] country = { "Number ","1-10", "11-20", "21-30", "31-40", "41-50"};
+    String[] country = { "Numbers and Alphabet ","1-10", "11-20", "21-30", "31-40", "41-50"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,11 +22,13 @@ public class Study extends AppCompatActivity implements
         Spinner spin = (Spinner) findViewById(R.id.spinner);
         spin.setOnItemSelectedListener(this);
 
+
         //Creating the ArrayAdapter instance having the country list
         ArrayAdapter aa = new ArrayAdapter(this,android.R.layout.simple_spinner_item,country);
         aa.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         //Setting the ArrayAdapter data on the Spinner
         spin.setAdapter(aa);
+
 
     }
 
@@ -43,7 +45,9 @@ public class Study extends AppCompatActivity implements
     }
 
 
-    }
+        }
+
+
     @Override
     public void onNothingSelected(AdapterView<?> arg0) {
         // TODO Auto-generated method stub
